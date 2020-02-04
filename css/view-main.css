@@ -1,0 +1,18 @@
+.view-main{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+.app-header{
+    height: 72px;
+
+    margin: auto;
+
+    background-color: gray;
+}
+
+
+.app-header-languages{
+
+}
