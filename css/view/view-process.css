@@ -1,0 +1,21 @@
+.view-process-text-elem{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.view-process-text-elem>._title{
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130.69%;
+
+    color: var(--white-1);
+}
+
+.view-process-text-elem>._text{
+    font-weight: normal;
+    font-size:16px;
+
+    color:var(--white-1);
+}
