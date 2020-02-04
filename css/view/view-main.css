@@ -1,7 +1,8 @@
 .view-main{
     height: 100%;
     width: 100%;
-    background-color: red;
+
+
 }
 
 .app-header{
@@ -10,7 +11,7 @@
 
     height: 72px;
 
-    background-color: gray;
+
 }
 .app-header>ul{
     list-style: none;

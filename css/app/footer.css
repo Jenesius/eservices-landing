@@ -1,0 +1,19 @@
+.app-footer{
+    height: 150px;
+
+    background-color: var(--black-1);
+}
+.app-footer>.container{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+.app-footer ._text{
+    color:var(--white-1);
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    line-height: 130.69%;
+}
