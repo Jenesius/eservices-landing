@@ -1,18 +1,42 @@
-
+.view-about-us{
+    height: var(--height-view-about-us);
+    padding-top: 50px;
+}
 
 .view-about-us-title{
     color:var(--white-1);
+
+}
+.view-about-us-text{
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    max-width: 400px;
 }
 .view-about-us-text>p{
     color:var(--white-1);
 }
 .view-about-us-text>._title{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 21px;
     line-height: 130%;
+
+
 }
 .view-about-us-text>._text{
 
-    font-size: 14px;
+    font-size: 18px;
     line-height: 130%;
+}
+.view-about-us-img{
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+
+    margin: auto;
 }

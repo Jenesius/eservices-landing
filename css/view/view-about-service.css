@@ -1,9 +1,10 @@
 .view-about-service{
-
+height: var(--height-view-about-service);
 }
 
 .view-about-service-title{
     color:var(--white-1);
+    margin-bottom: 50px;
 }
 
 

@@ -1,43 +1,27 @@
 .app-background{
     position: absolute;
-    left: 0;
-    top:0;
 
+
+    top: 0;
+    z-index: 0;
+    height: 100%;
     width: 100%;
-    z-index: -1;
 }
 .app-background>.section-1{
-
-    height: 855px;
-
+    height: var(--height-view-main);
     background: linear-gradient(240.65deg, #0024A5 0%, #0124A5 27.6%, #5B13B9 58.71%, #BF00CF 86.94%);
 
 }
 .app-background>.section-2{
+    height: calc(var(--height-view-about-us) + var(--height-view-about-service));
 
-    height: 1315px;
     background: linear-gradient(290deg, #0024A5 0%, #0124A5 27.6%, #5B13B9 58.71%, #BF00CF 86.94%);
 }
-.app-background>.section-container{
-    position: relative;
-    width: 100%;
+
+.app-background>.section-3{
+    background: linear-gradient(240deg, #0024A5 0%, #0124A5 26.76%, #5B13B9 56.92%, #BF00CF 84.28%);
 }
-.app-background>.section-container>.section-3{
-    position: absolute;
-
-    top: 0;
-
-    height: 1315px;
-    width: 100%;
-
-    z-index: 5;
-
-}
-.app-background>.section-container>.section-4{
-    position: absolute;
-    top: 0;
-
-    height: 2758px;
-    width: 100%;
+.app-background>.section-4{
+    height: 100%;
     background: #FF9900;
 }
