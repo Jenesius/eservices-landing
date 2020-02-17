@@ -1,0 +1,24 @@
+.app-bottom {
+    z-index: 123;
+    position: relative;
+    height: 64px;
+    width: 100%;
+
+    background-color: var(--black-1);
+
+}
+
+.app-bottom-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-bottom-container>._text{
+    color:var(--white-1);
+    font-size: 14px;
+    line-height: 130.69%;
+}
+.app-bottom-container>img{
+    width: 91px;
+}

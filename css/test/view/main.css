@@ -1,0 +1,76 @@
+.view-main{
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+
+}
+
+.view-main-title {
+    position: absolute;
+
+    font-weight: bold;
+    font-size: 19vh;
+    line-height: 19vh;
+    color: rgb(221, 135, 62);
+    background: linear-gradient(90deg, rgb(221, 135, 62) 33%, rgb(155, 62, 127) 66%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.view-main-image{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 589px;
+}
+
+@keyframes move-mouse-down {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+.view-main-down-ico{
+    position: absolute;
+
+    bottom: 25px;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: move-mouse-down;
+    animation-duration: 3s;
+
+    transition: var(--extra-slow);
+}
+
+
+.view-main-header{
+    display: flex;
+    justify-content: space-between;
+
+
+    padding-top: 36px;
+
+    color:var(--white-3);
+}
+.view-main-header a{
+    color:var(--white-1)
+}
+
+.view-main-header-navigation>a{
+    padding: 1em;
+}
+.view-main-header-navigation>a:last-child{
+    padding-right: 0;
+}
