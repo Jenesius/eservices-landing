@@ -1,132 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>eServices</title>
 
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height">
+
     <link rel = "stylesheet" href = "css/app.css">
     <link rel = "stylesheet" href = "css/main.css">
 
-    <link rel = "stylesheet" href = "css/view/view-main.css">
-    <link rel = "stylesheet" href = "css/view/view-about-us.css">
-    <link rel = "stylesheet" href = "css/view/view-about-service.css">
-    <link rel = "stylesheet" href = "css/view/view-process.css">
-    <link rel = "stylesheet" href = "css/view/view-jobs.css">
-    <link rel = "stylesheet" href = "css/view/view-contacts.css">
+    <link rel = "stylesheet" href = "css/test/main.css">
+    <link rel = "stylesheet" href = "css/test/background.css">
 
-    <link rel = "stylesheet" href = "css/app/footer.css">
-    <link rel = "stylesheet" href = "css/app/background.css">
+    <link rel = "stylesheet" href = "css/test/view/main.css">
+    <link rel = "stylesheet" href = "css/test/view/about-us.css">
+    <link rel = "stylesheet" href = "css/test/view/service.css">
+    <link rel = "stylesheet" href = "css/test/view/process.css">
+    <link rel = "stylesheet" href = "css/test/view/job.css">
+    <link rel = "stylesheet" href = "css/test/view/contacts.css">
+
+    <link rel = "stylesheet" href = "css/test/bottom.css">
 
 </head>
 <body>
+<div class = "test-main">
+
+    <div class = "app-lines">
+        <div class = "app-container">
+            <div class = "app-lines-elem"></div>
+            <div class = "app-lines-elem"></div>
+            <div class = "app-lines-elem"></div>
+            <div class = "app-lines-elem"></div>
+            <div class = "app-lines-elem"></div>
+        </div>
+    </div>
     <div class = "app-background">
-        <div class = "section-1"></div>
-        <div class = "section-2"></div>
-        <canvas id = "section-3" class = "section-3"></canvas>
+
+        <canvas id = "app-background-wave"></canvas>
+        <div    id = "app-background-fill"></div>
     </div>
 
-    <div class = "view-main">
-        <div class = "container">
-            <div class = "app-header flex">
-                <div class = "app-header-languages">
+    <div class = "app-container">
+
+        <div class = "view-main app-view">
+
+            <div class = "view-main-header" id = "header-menu">
+                <div class = "view-main-header-language">
                     <a href = "en.html" class = "_lang">ENG</a>
                     <span class = "_symbol">|</span>
                     <a href = "index.html" class = "_lang">RU</a>
                 </div>
-                <ul class = "app-header-nav-bar flex">
-                    <li>
-                        <a href = "#about-us" t-name = "menu-elem-1"></a>
-                    </li>
-                    <li>
-                        <a href = "#about-services" t-name = "menu-elem-2"></a>
-                    </li>
-                    <li>
-                        <a href = "#process" t-name = "menu-elem-3"></a>
-                    </li>
-                    <li>
-                        <a href = "#job" t-name = "menu-elem-4"></a>
-                    </li>
-                    <li>
-                        <a href = "#contacts" t-name = "menu-elem-5"></a>
-                    </li>
-                </ul>
-
-
+                <div class = "view-main-header-navigation" id = "menu-navigation">
+                    <a href = "#about-us"       t-name = "menu-elem-1"></a>
+                    <a href = "#about-services" t-name = "menu-elem-2"></a>
+                    <a href = "#process"        t-name = "menu-elem-3"></a>
+                    <a href = "#job"            t-name = "menu-elem-4"></a>
+                    <a href = "#contacts"       t-name = "menu-elem-5"></a>
+                </div>
             </div>
 
-            <div class = "view-main-content">
-                <h1  class = "view-main-content-title">
-                    WEB</br>
-                    PRO</br>
-                    JECT</br>
-                    eServ</br>
-                    ices
-                </h1>
-                <img class = "view-main-content-img" src = "img/main/view-main.svg" alt = "image-main">
+            <div class = "view-main-header-button" id = "header-menu-button"></div>
 
-                <img class = "view-main-content-scroll-down" src = "img/ico/mouse.svg" alt = "scroll down">
+            <h1 class="view-main-title" id = "view-main-title">
+                WEB<br>
+                PRO<br>
+                JECT<br>
+                eServ<br>
+                ices
+            </h1>
+
+            <img class = "view-main-image" src = "img/main/view-main.svg" alt = "view main back image">
+
+            <img class = "view-main-down-ico" src = "img/ico/mouse.svg" alt = "scroll down">
+
+        </div>
+
+        <a name = "about-us"></a>
+        <div class = "view-about app-view">
+            <div t-name = "view-about-us-title" class = "view-about-title app-title"></div>
+            <div class = "view-about-container">
+                <div class = "view-about-container-text">
+                    <p t-name = "view-about-us-sub-title"  class = "_title"></p>
+                    <p t-name = "view-about-us-sub-text" class = "_text"></p>
+                </div>
+                <img class = "view-about-container-image" src = "img/main/view-about.svg">
             </div>
         </div>
 
-    </div>
+        <a name = "about-services"></a>
+        <div class = "view-service app-view">
+            <div class = "view-service-title app-title" t-name = "view-about-services-title"></div>
 
-    <a name = "about-us"></a>
-    <div class = "view-about-us">
-        <div class = "container">
-            <div class = "app-title view-about-us-title">
-                <h2 class = "app-title" t-name = "view-about-us-title"></h2>
-            </div>
-            <div class = "view-about-us-text flex flex-column">
-                <p class = "_title" t-name = "view-about-us-sub-title"></p>
-                <p class = "_text" t-name = "view-about-us-sub-text"></p>
-            </div>
-            <img class = "view-about-us-img" src = "img/main/view-about.svg" alt = "image-about-us">
-        </div>
-    </div>
+            <div class = "view-service-card" id = "card-view-about">
+                <div class = "view-about-service-card-elem">
+                    <img src = "img/ico/aboutService/online.svg" class = "view-about-service-card-elem-image">
+                    <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-1-title"></p>
+                    <p class = "view-about-service-card-elem-text"  t-name = "view-about-services-card-1-text" ></p>
+                </div>
+                <div class = "view-about-service-card-elem _active">
+                    <img src = "img/ico/aboutService/personData.svg" class = "view-about-service-card-elem-image" alt = "ico-list-card">
+                    <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-2-title"></p>
+                    <p class = "view-about-service-card-elem-text" t-name = "view-about-services-card-2-text"></p>
+                </div>
+                <div class = "view-about-service-card-elem">
+                    <img src = "img/ico/aboutService/integration.svg" class = "view-about-service-card-elem-image" alt = "ico-list-card">
+                    <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-3-title"></p>
+                    <p class = "view-about-service-card-elem-text" t-name = "view-about-services-card-3-text"></p>
+                </div>
 
-    <a name = "about-services"></a>
-    <div class = "view-about-service">
-        <div class = "container">
-            <div class = "app-title view-about-service-title">
-                <h2 class = "app-title" t-name = "view-about-services-title"></h2>
             </div>
-            <div class = "view-about-service-list flex flex-c-c">
-                <div class = "view-about-service-list-card">
-                    <img src = "img/ico/aboutService/online.svg" class = "_ico" alt = "ico-list-card">
-                    <p class = "_title" t-name = "view-about-services-card-1-title"></p>
-                    <p class = "_text" t-name = "view-about-services-card-1-text"></p>
-                </div>
-                <div class = "view-about-service-list-card _active">
-                    <img src = "img/ico/aboutService/personData.svg" class = "_ico" alt = "ico-list-card">
-                    <p class = "_title" t-name = "view-about-services-card-2-title"></p>
-                    <p class = "_text" t-name = "view-about-services-card-2-text"></p>
-                </div>
-                <div class = "view-about-service-list-card">
-                    <img src = "img/ico/aboutService/integration.svg" class = "_ico" alt = "ico-list-card">
-                    <p class = "_title" t-name = "view-about-services-card-3-title"></p>
-                    <p class = "_text" t-name = "view-about-services-card-3-text"></p>
-                </div>
+            <div class = "view-about-service-card-slider" id = "slider-view-about">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
 
-    <a name = "process"></a>
-    <div class = "view-process" id = "view-process">
-        <div class = "container">
-            <div class = "app-title view-process-title">
-                <h2 class = "app-title" t-name = "view-process-title"></h2>
-            </div>
-
-            <img class = "view-process-img" src = "img/main/view-process.svg" alt = "image-process">
-
-            <div class = "view-process-text flex flex-column">
-                <div class = "view-process-text-elem">
-                    <p class = "_title" t-name = "view-process-elem-1-title"></p>
-                    <p class = "_text"  t-name = "view-process-elem-1-text"></p>
-                </div>
-                <div class = "view-process-text-elem">
-                    <p class = "_title" t-name = "view-process-elem-2-title"></p>
-                    <p class = "_text"  t-name = "view-process-elem-2-text"></p>
+        <a name = "process"></a>
+        <div class = "view-process app-view" id = "view-process">
+            <div class = "view-process-title app-title" t-name = "view-process-title"></div>
+            <div class = "view-process-container">
+                <img src = "img/main/view-process.svg" class = "view-process-container-image">
+                <div class = "view-process-container-text">
+                    <div class = "view-process-container-text-elem">
+                        <p class = "_title" t-name = "view-process-elem-1-title"></p>
+                        <p class = "_text"  t-name = "view-process-elem-1-text"></p>
+                    </div>
+                    <div class = "view-process-container-text-elem">
+                        <p class = "_title" t-name = "view-process-elem-2-title"></p>
+                        <p class = "_text"  t-name = "view-process-elem-2-text"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,25 +136,24 @@
     </div>
 
     <a name = "job"></a>
-    <div class = "view-jobs">
-        <div class = "app-title view-jobs-title">
-            <h2 class = "app-title" t-name = "view-jobs-title"></h2>
-        </div>
-        <div class = "view-jobs-container">
-            <div class = "view-jobs-container-name-specialty">
-                <div>
-                    <p class = "_title" t-name = "view-jobs-card-title"></p>
-                    <p class = "_text"  t-name = "view-jobs-card-text" ></p>
+    <div class = "view-job app-view" id = "view-job">
+        <div class = "view-job-title app-title" t-name = "view-jobs-title"></div>
+        <div class = "view-job-container">
 
+            <div class = "view-jobs-container-background"></div>
+            <img src = "img/main/view-jobs.svg" class = "view-jobs-container-illustration">
+
+            <div class = "app-container">
+                <div class = "view-jobs-container-card">
+                    <p class = "_title" t-name = "view-jobs-card-title"></p>
+                    <p class = "_text" t-name = "view-jobs-card-text"></p>
                 </div>
-            </div>
-            <div class = "view-jobs-container-img-symbol">
-                <img src = "img/ico/jobsUs/elem.svg">
-                <img src = "img/ico/jobsUs/elem.svg">
-                <img src = "img/ico/jobsUs/elem.svg">
-            </div>
-            <div class = "view-jobs-container-text-skills">
-                <div class = "_card">
+                <div class = "vie-jobs-container-separator">
+                    <img src = "img/ico/jobsUs/elem.svg">
+                    <img src = "img/ico/jobsUs/elem.svg">
+                    <img src = "img/ico/jobsUs/elem.svg">
+                </div>
+                <div class = "vie-jobs-container-skills">
                     <p class = _title>Условия:</p>
                     <p>Удалёнка</p>
                     <p>Частичная занятость</p>
@@ -171,32 +172,25 @@
     </div>
 
     <a name = "contacts"></a>
-    <div class = "view-contacts">
-        <div class = "container">
-            <div class = "app-title view-contacts-title">
-                <h2 class = "app-title" t-name = "view-contacts-title"></h2>
-            </div>
-            <div class = "view-contacts-container flex flex-column flex-c-c">
-                <p class = "_title">eservices.t@gmail.com</p>
-                <p class = "_text" t-name = "view-contacts-text"></p>
-                <img class = "_img" src = "img/ico/flower.svg" >
-            </div>
+    <div class = "view-contacts app-view" id = "view-contacts">
+        <div class = "view-contacts-title app-title" t-name = "view-contacts-title"></div>
+        <div class = "view-contacts-container">
+            <p class = "_title">eservices.t@gmail.com</p>
+            <p class = "_text" t-name = "view-contacts-text"></p>
+            <img class = "_img" src = "img/ico/flower.svg" >
         </div>
     </div>
 
-    <div class = "app-footer">
-        <div class = "container flex">
+
+    <div class = "app-bottom" id = "app-bottom">
+        <div class = "app-container app-bottom-container">
             <p class = "_text">eServices 2019 - 2020</p>
             <img src = "img/ico/madeBy.svg" alt = "made by Small1">
         </div>
-
     </div>
-
-
-    <script src = "js/background.js"></script>
-
-
+</div>
     <script src = "js/main.js" type = "module"></script>
-
+    <script src = "js/index.js"></script>
+    <script src = "js/background.js"></script>
 </body>
 </html>

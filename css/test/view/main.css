@@ -59,6 +59,8 @@
     display: flex;
     justify-content: space-between;
 
+    position: relative;
+    z-index: 100;
 
     padding-top: 36px;
 
@@ -74,3 +76,133 @@
 .view-main-header-navigation>a:last-child{
     padding-right: 0;
 }
+
+.view-main-header-button{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .view-main-header{
+
+        display: none;
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        padding-top: 90px;
+
+        height: 100%;
+        width: 100%;
+
+        background-color: #FF9900;
+
+    }
+
+    .view-main-header._active{
+        display: flex;
+    }
+
+
+    .view-main-header-language{
+        display: none;
+    }
+    .view-main-header-navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .view-main-header-navigation>a{
+
+        padding: 10px 36px;
+
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        color:var(--black-1)
+    }
+
+    .view-main-header-button{
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        right: 34px;
+        top: 47px;
+
+        z-index: 100;
+    }
+    .view-main-header-button, .view-main-header-button:after, .view-main-header-button:before{
+        position: absolute;
+
+        content: "";
+        width: 16px;
+        height: 2px;
+
+        background-color: white;
+
+        border-radius: 2px;
+
+        transition: 0.3s;
+    }
+    .view-main-header-button._active{
+        background-color: #FF9900;
+    }
+     .view-main-header-button._active:after, .view-main-header-button._active:before
+    {
+        background-color: black;
+    }
+
+
+    .view-main-header-button:before{
+        bottom: 5px;
+    }
+    .view-main-header-button:after{
+        top: 5px;
+    }
+
+    .view-main-header-button._active:before{
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    .view-main-header-button._active:after{
+        top:0;
+        transform: rotate(-45deg);
+    }
+
+    .view-main-header-button>span{
+        position: absolute;
+
+        width: 16px;
+        height: 2px;
+
+        background-color: black;
+    }
+
+    .view-main-title{
+
+        top: 110px;
+        left: 30px;
+        right: 30px;
+
+        font-size: 60px;
+        line-height: 54px;
+    }
+    .view-main-image{
+        width: 267px;
+        height: 248px;
+
+        top: auto;
+        bottom: 75px;
+        left: 0;
+        right: 0;
+    }
+
+}
+
+

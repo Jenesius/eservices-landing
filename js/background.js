@@ -1,12 +1,14 @@
 
 
-let containerViewProcess = document.getElementById('view-process');
 
 window.onload = function () {
-    let canvas = document.getElementById("section-3");
 
-    canvas.width = containerViewProcess.offsetWidth;
-    canvas.height = 1000;
+    let SIZE_WAVE = 1000;
+
+    let canvas = document.getElementById("app-background-wave");
+
+    canvas.width = document.documentElement.clientWidth;
+    canvas.height = SIZE_WAVE;
 
     let ctx = canvas.getContext("2d");
     let widUnit = canvas.width / 300;
@@ -21,4 +23,23 @@ window.onload = function () {
     ctx.stroke();
     ctx.fillStyle = "#FF9900";
     ctx.fill();
-}
+
+
+
+    let fillElem = document.getElementById('app-background-fill');
+
+    function getSizeFill(){
+        return document.getElementById('view-process').offsetHeight +
+            document.getElementById('view-job').offsetHeight +
+            document.getElementById('view-contacts').offsetHeight +
+            document.getElementById('app-bottom').offsetHeight -
+            25
+            ;
+    }
+
+    let _mobileBack = document.getElementById('view-process').offsetHeight;
+
+    fillElem.style.height = getSizeFill() - ((document.documentElement.clientWidth < 769)? (SIZE_WAVE -_mobileBack + 140): SIZE_WAVE) + 'px';
+
+};
+

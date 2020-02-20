@@ -1,8 +1,29 @@
 .app-background{
     position: absolute;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
     height: 100%;
     width: 100%;
 
     background: linear-gradient(256.33deg, #0024A5 10.82%, #0124A5 30.08%, #5B13B9 51.79%, #BF00CF 71.48%);
+}
+
+#app-background-fill{
+    width: 100%;
+
+    background-color: #FF9900;
+}
+
+@media screen and (max-width: 768px){
+    .app-background{
+
+        background: linear-gradient(271.35deg, #0024A5 -36.79%, #321BB0 -36.79%, #0124A5 -1.01%, #5B13B9 39.31%, #BF00CF 75.9%);
+
+    }
+    #app-background-wave{
+        display: none;
+    }
 }

@@ -1,27 +1,30 @@
 .view-job{
     position: relative;
+    padding-top: 111px;
+    z-index: 10;
 }
 .view-job-title{
-    text-align: center;
 
-    margin-top: 111px;
     margin-bottom: 214px;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 47px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    color: #FFFFFF;
 }
 .view-job-container{
+    position: relative;
+
     display: flex;
     justify-content: space-between;
 
     height: 330px;
 }
+.view-job-container>.app-container{
+    display: flex;
+    justify-content: space-between;
+}
 .view-jobs-container-card{
+    position: relative;
+    z-index: 4;
+
     width: 50%;
     padding-right: 124px;
 
@@ -36,6 +39,25 @@
 }
 .view-jobs-container-card>._text{
     font-size: 15px;
+}
+.view-jobs-container-background{
+    position:absolute;
+
+    background-color: white;
+    box-shadow: 1px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 20px 20px 0;
+
+    left: 0;
+    z-index: 0;
+    width: 50vw;
+    height: 100%;
+}
+.view-jobs-container-illustration{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: calc(100% - 60px);
 }
 .vie-jobs-container-separator{
     display: flex;
@@ -74,3 +96,80 @@
     margin-top: 25px;
 }
 
+
+@media screen and (max-width: 768px){
+    .view-job{
+
+        padding-top: 0;
+        margin-top: 160px;
+    }
+
+
+
+    .view-job-title{
+        margin-bottom: 40px;
+    }
+    .view-job-container{
+        height: auto;
+        flex-direction: column;
+    }
+    .view-job-container>.app-container{
+        display: block;
+    }
+    .view-jobs-container-background{
+        width: calc(100% - 15px);
+        height: 340px;
+    }
+    .view-jobs-container-card{
+        height: 340px;
+        width: calc(100% - 15px);
+        padding: 28px 15px 12px 30px;
+    }
+    .view-jobs-container-card>p{
+        font-size: 18px;
+        line-height: 23px;
+
+        letter-spacing: 0.05em;
+    }
+
+    .vie-jobs-container-separator{
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+    .view-job-title{
+        color:black;
+    }
+    .view-jobs-container-illustration{
+        width: 109px;
+        bottom: 349px;
+        z-index: 123;
+
+        left: 31px;
+        right: auto;
+    }
+    .vie-jobs-container-skills{
+        position: relative;
+        width: calc(100% - 15px);
+        height: 379px;
+
+        text-align: center;
+
+        padding: 19px 15px 15px 31px;
+
+        background: linear-gradient(278.67deg, #0024A5 -36.79%, #321BB0 -36.79%, #0124A5 -1.01%, #5B13B9 39.31%, #BF00CF 75.9%);
+        box-shadow: 1px 10px 4px rgba(0, 0, 0, 0.25);
+
+        border-radius: 0 20px 20px 0;
+    }
+    .vie-jobs-container-skills>p{
+        font-size: 18px;
+        line-height: 29px
+    }
+    .vie-jobs-container-skills>._title:first-child{
+       margin-top: 0;
+    }
+
+}

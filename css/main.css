@@ -1,10 +1,4 @@
 *{
-    --height-view-main:90%;
-    --height-view-about-us:70%;
-    --height-view-about-service:70%;
-    --height-view-process:60%;
-    --height-view-contacts:60%;
-
     scroll-behavior: smooth;
 }
 
