@@ -47,7 +47,7 @@
 
 @media screen  and (max-width: 768px){
     .view-process{
-        height: 100vh;
+        padding-bottom: 120px;
     }
     .view-process-container{
         flex-direction: column;
@@ -58,7 +58,7 @@
     }
     .view-process-container-image{
         position: absolute;
-        bottom: -80px;
+        bottom: -115px;
         width: 250px;
     }
 

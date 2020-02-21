@@ -39,7 +39,7 @@ window.onload = function () {
 
     let _mobileBack = document.getElementById('view-process').offsetHeight;
 
-    fillElem.style.height = getSizeFill() - ((document.documentElement.clientWidth < 769)? (SIZE_WAVE -_mobileBack + 140): SIZE_WAVE) + 'px';
+    fillElem.style.height = getSizeFill() - ((document.documentElement.clientWidth < 769)? (0): SIZE_WAVE) + 'px';
 
 };
 

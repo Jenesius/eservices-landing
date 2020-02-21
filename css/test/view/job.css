@@ -99,9 +99,12 @@
 
 @media screen and (max-width: 768px){
     .view-job{
+        z-index: 2;
 
-        padding-top: 0;
-        margin-top: 160px;
+
+        padding: 160px 0 10px 0;
+
+        background-color: #ff9900;
     }
 
 

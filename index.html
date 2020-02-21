@@ -41,7 +41,7 @@
 
     <div class = "app-container">
 
-        <div class = "view-main app-view">
+        <div class = "view-main app-view" id = "view-main">
 
             <div class = "view-main-header" id = "header-menu">
                 <div class = "view-main-header-language">
@@ -50,11 +50,13 @@
                     <a href = "index.html" class = "_lang">RU</a>
                 </div>
                 <div class = "view-main-header-navigation" id = "menu-navigation">
-                    <a href = "#about-us"       t-name = "menu-elem-1"></a>
-                    <a href = "#about-services" t-name = "menu-elem-2"></a>
-                    <a href = "#process"        t-name = "menu-elem-3"></a>
-                    <a href = "#job"            t-name = "menu-elem-4"></a>
-                    <a href = "#contacts"       t-name = "menu-elem-5"></a>
+                    <a href = "#about-us"  class = "_link"      t-name = "menu-elem-1"></a>
+                    <a href = "#about-services" class = "_link" t-name = "menu-elem-2"></a>
+                    <a href = "#process" class = "_link"        t-name = "menu-elem-3"></a>
+                    <a href = "#job"  class = "_link"           t-name = "menu-elem-4"></a>
+                    <a href = "#contacts"  class = "_link"      t-name = "menu-elem-5"></a>
+
+                    <a href = "mailto:eservices.t@gmail.com" class = "_link menu-navigation-mail">eservices.t@gmail.com</a>
                 </div>
             </div>
 
@@ -119,7 +121,7 @@
         <div class = "view-process app-view" id = "view-process">
             <div class = "view-process-title app-title" t-name = "view-process-title"></div>
             <div class = "view-process-container">
-                <img src = "img/main/view-process.svg" class = "view-process-container-image">
+                <img src = "img/main/view-process.svg" class = "view-process-container-image" id = "process-image">
                 <div class = "view-process-container-text">
                     <div class = "view-process-container-text-elem">
                         <p class = "_title" t-name = "view-process-elem-1-title"></p>
@@ -175,7 +177,7 @@
     <div class = "view-contacts app-view" id = "view-contacts">
         <div class = "view-contacts-title app-title" t-name = "view-contacts-title"></div>
         <div class = "view-contacts-container">
-            <p class = "_title">eservices.t@gmail.com</p>
+            <a href = "mailto:eservices.t@gmail.com" class = "_title">eservices.t@gmail.com</a>
             <p class = "_text" t-name = "view-contacts-text"></p>
             <img class = "_img" src = "img/ico/flower.svg" >
         </div>

@@ -1,7 +1,7 @@
 .view-main{
     position: relative;
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
 }
@@ -81,6 +81,10 @@
     display: none;
 }
 
+.menu-navigation-mail{
+    display: none;
+}
+
 @media screen and (max-width:768px){
     .view-main-header{
 
@@ -112,7 +116,7 @@
         display: flex;
         flex-direction: column;
     }
-    .view-main-header-navigation>a{
+    .view-main-header-navigation>._link{
 
         padding: 10px 36px;
 
@@ -125,6 +129,17 @@
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
         color:var(--black-1)
+    }
+    .menu-navigation-mail{
+        display: block;
+
+        position: absolute;
+        bottom: 46px;
+
+        font-size: 18px !important;
+        line-height: 24px !important;
+        letter-spacing: 0.05em !important;
+        text-decoration-line: underline;
     }
 
     .view-main-header-button{
@@ -202,6 +217,8 @@
         left: 0;
         right: 0;
     }
+
+
 
 }
 

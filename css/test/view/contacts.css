@@ -51,6 +51,8 @@
 
     .view-contacts{
         padding: 30px;
+
+        background-color: #ff9900;
     }
     .view-contacts-title{
         margin: 10px 0 40px 0;
@@ -68,6 +70,8 @@
         font-size: 18px;
         line-height: 44px;
         order: 1;
+
+        color:black;
     }
     .view-contacts-container>._text{
         font-size: 18px;

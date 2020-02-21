@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <title>eServices</title>
 
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height">
+
     <link rel = "stylesheet" href = "css/app.css">
     <link rel = "stylesheet" href = "css/main.css">
 
@@ -39,24 +41,28 @@
 
     <div class = "app-container">
 
-        <div class = "view-main">
+        <div class = "view-main app-view" id = "view-main">
 
-            <div class = "view-main-header">
+            <div class = "view-main-header" id = "header-menu">
                 <div class = "view-main-header-language">
                     <a href = "en.html" class = "_lang">ENG</a>
                     <span class = "_symbol">|</span>
                     <a href = "index.html" class = "_lang">RU</a>
                 </div>
-                <div class = "view-main-header-navigation">
-                    <a href = "#about-us"       t-name = "menu-elem-1"></a>
-                    <a href = "#about-services" t-name = "menu-elem-2"></a>
-                    <a href = "#process"        t-name = "menu-elem-3"></a>
-                    <a href = "#job"            t-name = "menu-elem-4"></a>
-                    <a href = "#contacts"       t-name = "menu-elem-5"></a>
+                <div class = "view-main-header-navigation" id = "menu-navigation">
+                    <a href = "#about-us"  class = "_link"      t-name = "menu-elem-1"></a>
+                    <a href = "#about-services" class = "_link" t-name = "menu-elem-2"></a>
+                    <a href = "#process" class = "_link"        t-name = "menu-elem-3"></a>
+                    <a href = "#job"  class = "_link"           t-name = "menu-elem-4"></a>
+                    <a href = "#contacts"  class = "_link"      t-name = "menu-elem-5"></a>
+
+                    <a href = "mailto:eservices.t@gmail.com" class = "_link menu-navigation-mail">eservices.t@gmail.com</a>
                 </div>
             </div>
 
-            <h1 class="view-main-title">
+            <div class = "view-main-header-button" id = "header-menu-button"></div>
+
+            <h1 class="view-main-title" id = "view-main-title">
                 WEB<br>
                 PRO<br>
                 JECT<br>
@@ -71,8 +77,8 @@
         </div>
 
         <a name = "about-us"></a>
-        <div class = "view-about">
-            <div t-name = "view-about-us-title" class = "view-about-title"></div>
+        <div class = "view-about app-view">
+            <div t-name = "view-about-us-title" class = "view-about-title app-title"></div>
             <div class = "view-about-container">
                 <div class = "view-about-container-text">
                     <p t-name = "view-about-us-sub-title"  class = "_title"></p>
@@ -83,10 +89,10 @@
         </div>
 
         <a name = "about-services"></a>
-        <div class = "view-service">
-            <div class = "view-service-title" t-name = "view-about-services-title"></div>
+        <div class = "view-service app-view">
+            <div class = "view-service-title app-title" t-name = "view-about-services-title"></div>
 
-            <div class = "view-service-card">
+            <div class = "view-service-card" id = "card-view-about">
                 <div class = "view-about-service-card-elem">
                     <img src = "img/ico/aboutService/online.svg" class = "view-about-service-card-elem-image">
                     <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-1-title"></p>
@@ -102,14 +108,20 @@
                     <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-3-title"></p>
                     <p class = "view-about-service-card-elem-text" t-name = "view-about-services-card-3-text"></p>
                 </div>
+
+            </div>
+            <div class = "view-about-service-card-slider" id = "slider-view-about">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
 
         <a name = "process"></a>
-        <div class = "view-process" id = "view-process">
-            <div class = "view-process-title" t-name = "view-process-title"></div>
+        <div class = "view-process app-view" id = "view-process">
+            <div class = "view-process-title app-title" t-name = "view-process-title"></div>
             <div class = "view-process-container">
-                <img src = "img/main/view-process.svg" class = "view-process-container-image">
+                <img src = "img/main/view-process.svg" class = "view-process-container-image" id = "process-image">
                 <div class = "view-process-container-text">
                     <div class = "view-process-container-text-elem">
                         <p class = "_title" t-name = "view-process-elem-1-title"></p>
@@ -126,8 +138,8 @@
     </div>
 
     <a name = "job"></a>
-    <div class = "view-job" id = "view-job">
-        <div class = "view-job-title" t-name = "view-jobs-title"></div>
+    <div class = "view-job app-view" id = "view-job">
+        <div class = "view-job-title app-title" t-name = "view-jobs-title"></div>
         <div class = "view-job-container">
 
             <div class = "view-jobs-container-background"></div>
@@ -162,10 +174,10 @@
     </div>
 
     <a name = "contacts"></a>
-    <div class = "view-contacts" id = "view-contacts">
-        <div class = "view-contacts-title" t-name = "view-contacts-title"></div>
+    <div class = "view-contacts app-view" id = "view-contacts">
+        <div class = "view-contacts-title app-title" t-name = "view-contacts-title"></div>
         <div class = "view-contacts-container">
-            <p class = "_title">eservices.t@gmail.com</p>
+            <a href = "mailto:eservices.t@gmail.com" class = "_title">eservices.t@gmail.com</a>
             <p class = "_text" t-name = "view-contacts-text"></p>
             <img class = "_img" src = "img/ico/flower.svg" >
         </div>
@@ -173,13 +185,14 @@
 
 
     <div class = "app-bottom" id = "app-bottom">
-        <div class = "app-wrap app-bottom-container">
+        <div class = "app-container app-bottom-container">
             <p class = "_text">eServices 2019 - 2020</p>
             <img src = "img/ico/madeBy.svg" alt = "made by Small1">
         </div>
     </div>
 </div>
 <script src = "js/main.js" type = "module"></script>
+<script src = "js/index.js"></script>
 <script src = "js/background.js"></script>
 </body>
 </html>

@@ -52,4 +52,11 @@ z-index: 1;
     .app-container{
         width: 100%;
     }
+
+    #app-background-wave{
+        display: none;
+    }
+    #app-background-fill{
+        display: none;
+    }
 }

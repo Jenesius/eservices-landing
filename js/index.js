@@ -1,11 +1,18 @@
 
 
-console.log(`version 0.1.1`);
+console.log(`version 0.1.3`);
 /*************************/
 function toggleMenu(){
     document.getElementById('header-menu-button').classList.toggle('_active');
 
     document.getElementById('header-menu').classList.toggle('_active');
+
+    if (document.body.style.overflow === 'hidden')
+    document.body.style.overflow = 'auto';
+    else
+        document.body.style.overflow = 'hidden';
+
+
 }
 
 document.getElementById('header-menu-button').addEventListener('click', (e) => {
@@ -85,3 +92,6 @@ for(let i = 0;i < _menuNavigation.length; i++){
         toggleMenu();
     })
 }
+
+
+document.getElementById('view-main').style.height = document.getElementById('view-main').offsetHeight + 'px';
