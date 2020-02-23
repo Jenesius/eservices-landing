@@ -20,6 +20,7 @@
 
     <link rel = "stylesheet" href = "css/test/bottom.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang:300,400&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class = "test-main">
@@ -95,17 +96,17 @@
             <div class = "view-service-card" id = "card-view-about">
                 <div class = "view-about-service-card-elem">
                     <img src = "img/ico/aboutService/online.svg" class = "view-about-service-card-elem-image">
-                    <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-1-title"></p>
+                    <div class = "view-about-service-card-elem-title" t-name = "view-about-services-card-1-title"></div>
                     <p class = "view-about-service-card-elem-text"  t-name = "view-about-services-card-1-text" ></p>
                 </div>
                 <div class = "view-about-service-card-elem _active">
                     <img src = "img/ico/aboutService/personData.svg" class = "view-about-service-card-elem-image" alt = "ico-list-card">
-                    <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-2-title"></p>
+                    <div class = "view-about-service-card-elem-title" t-name = "view-about-services-card-2-title"></div>
                     <p class = "view-about-service-card-elem-text" t-name = "view-about-services-card-2-text"></p>
                 </div>
                 <div class = "view-about-service-card-elem">
                     <img src = "img/ico/aboutService/integration.svg" class = "view-about-service-card-elem-image" alt = "ico-list-card">
-                    <p class = "view-about-service-card-elem-title" t-name = "view-about-services-card-3-title"></p>
+                    <div class = "view-about-service-card-elem-title" t-name = "view-about-services-card-3-title"></div>
                     <p class = "view-about-service-card-elem-text" t-name = "view-about-services-card-3-text"></p>
                 </div>
 
@@ -151,9 +152,24 @@
                     <p class = "_text" t-name = "view-jobs-card-text"></p>
                 </div>
                 <div class = "vie-jobs-container-separator">
-                    <img src = "img/ico/jobsUs/elem.svg">
-                    <img src = "img/ico/jobsUs/elem.svg">
-                    <img src = "img/ico/jobsUs/elem.svg">
+                    <div>
+                        <span class = "s"></span>
+                        <span class = "s"></span>
+                        <span class = "l"></span>
+                        <span class = "l"></span>
+                    </div>
+                    <div>
+                        <span class = "s"></span>
+                        <span class = "s"></span>
+                        <span class = "l"></span>
+                        <span class = "l"></span>
+                    </div>
+                    <div>
+                        <span class = "s"></span>
+                        <span class = "s"></span>
+                        <span class = "l"></span>
+                        <span class = "l"></span>
+                    </div>
                 </div>
                 <div class = "vie-jobs-container-skills">
                     <p class = _title>Условия:</p>
@@ -187,7 +203,12 @@
     <div class = "app-bottom" id = "app-bottom">
         <div class = "app-container app-bottom-container">
             <p class = "_text">eServices 2019 - 2020</p>
-            <img src = "img/ico/madeBy.svg" alt = "made by Small1">
+
+            <div class = "_design">
+                <p   class = "_design-text">Design by</p>
+                <img class = "_design-image"  src = "img/ico/madeBy.png">
+                <a href = "https://www.instagram.com/prowebndesgn/"></a>
+            </div>
         </div>
     </div>
 </div>

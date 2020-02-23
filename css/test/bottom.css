@@ -14,14 +14,43 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .app-bottom-container>._text{
     color:var(--white-1);
     font-size: 14px;
     line-height: 130.69%;
 }
-.app-bottom-container>img{
-    width: 91px;
+
+.app-bottom-container{
+    position: relative;
 }
+.app-bottom-container ._design{
+    align-items: center;
+
+    position: relative;
+    display: flex;
+}
+.app-bottom-container ._design-text{
+    font-family: 'Fahkwang' ;
+
+    color:var(--white-1);
+    font-size: 13px;
+    line-height: 130.69%;
+
+    font-weight: 300;
+
+    margin-right: 7px;
+}
+.app-bottom-container a{
+    position: absolute;
+    top:0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+}
+
 
 @media screen and (max-width: 768px) {
     .app-bottom{
@@ -38,7 +67,10 @@
 
         margin-bottom: 9px;
     }
-    .app-bottom-container>img{
+    .app-bottom-container ._design-text{
+        display: none;
+    }
+    .app-bottom-container img{
         height: 23px;
         width: auto;
     }

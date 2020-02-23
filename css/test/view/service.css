@@ -64,11 +64,16 @@
     }
 
     .view-service-card{
-        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
 
-        padding: 10px 0;
-        overflow-x: scroll;
+        padding-left: 41px;
+
     }
+
+    .view-service-card::-webkit-scrollbar { width: 0; height: 0;}
+
     .view-about-service-card-elem{
         min-width: 280px;
         height: 460px;
@@ -85,16 +90,29 @@
 
     .view-about-service-card-elem-image{
         margin:37px 0 12px 0;
+
+        height: 50px;
     }
     .view-about-service-card-elem-title{
-        margin-bottom: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: auto;
+
+        padding: 0px 45px;
 
         font-weight: bold;
         font-size: 18px;
-        line-height: 20px;
+        line-height: 22px;
+        height: 60px;
+        width: 180px;
 
     }
     .view-about-service-card-elem-text{
+        margin-top: 10px;
+
         font-weight: 300;
         font-size: 18px;
         line-height: 23px;

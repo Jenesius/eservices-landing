@@ -37,6 +37,8 @@
     line-height: 86px;
     letter-spacing: 0.05em;
     text-decoration-line: underline;
+
+    color:black;
 }
 .view-contacts-container>._text{
     font-weight: normal;

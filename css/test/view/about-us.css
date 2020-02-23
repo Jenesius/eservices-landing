@@ -9,7 +9,7 @@
     padding-top: 46px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     align-items: center;
 }
@@ -37,6 +37,9 @@
 @media screen and (max-width: 768px){
     .view-about{
         height: 100vh;
+    }
+    .view-about-container{
+        flex-direction: column;
     }
     .view-about-container-text{
         padding: 0 90px 0 30px;

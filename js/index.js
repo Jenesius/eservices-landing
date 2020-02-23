@@ -1,6 +1,6 @@
 
 
-console.log(`version 0.1.3`);
+console.log(`version 0.2.0`);
 /*************************/
 function toggleMenu(){
     document.getElementById('header-menu-button').classList.toggle('_active');
@@ -37,6 +37,8 @@ if (isMobile){
 
 
 
+
+
 let positionAboutSlider = 0;
 let _arraySlider = document.getElementById('slider-view-about').getElementsByTagName('span');
 function checkSlider(pos = (positionAboutSlider+ 1) ){
@@ -57,20 +59,27 @@ function checkSlider(pos = (positionAboutSlider+ 1) ){
 
 checkSlider();
 
-let idIntervalAboutSlider;
-function setNewInterval(){
-    clearInterval(idIntervalAboutSlider);
-    idIntervalAboutSlider = setInterval(()=>{
 
-        if (isMobile){
+let cardScroll = document.getElementById('card-view-about');
+cardScroll.addEventListener('touchend',()=>{
 
-            checkSlider();
-
+    function near(x1,x2){
+        if (Math.abs(x1-x2) < 100){
+            return true;
         }
+    }
 
-    }, 5000);
-}
-setNewInterval();
+    if (near(cardScroll.scrollLeft, 0)){
+        checkSlider(0);
+    }
+    else if (near(cardScroll.scrollWidth - cardScroll.offsetWidth,cardScroll.scrollLeft )){
+        checkSlider(2)
+    }else{
+        checkSlider(1);
+    }
+
+});
+
 
 
 for(let i = 0; i < _arraySlider.length; i++){
@@ -78,9 +87,12 @@ for(let i = 0; i < _arraySlider.length; i++){
     _arraySlider[i].addEventListener('click', ()=>{
 
         checkSlider(i);
-        setNewInterval();
+
     })
 }
+
+
+
 
 
 
